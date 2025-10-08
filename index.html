@@ -71,9 +71,9 @@
 <body class="bg-[#0C0F19] text-white font-sans">
 
 <!-- NAV -->
-<header class="bg-[#0B0F19] text-white md:mt-4">
+<header class="bg-[#0B0F19] text-white mt-4">
   <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 md:py-4">
-
+    
     <!-- Logo -->
     <div class="flex items-center space-x-2">
       <div class="w-6 h-6 bg-white rounded"></div>
@@ -81,42 +81,44 @@
     </div>
 
     <!-- Desktop Menu -->
-    <nav class="hidden md:flex items-center space-x-10">
+    <nav class="hidden md:flex items-center space-x-6">
       <a href="#" class="hover:text-gray-300">Modules</a>
       <a href="#" class="hover:text-gray-300">Pricing</a>
       <a href="#" class="hover:text-gray-300">Jobs</a>
     </nav>
 
-    <!-- Buttons + Hamburger -->
-    <div class="flex items-center space-x-2 md:space-x-4 ml-2">
+    <!-- Desktop Buttons -->
+    <div class="hidden md:flex items-center space-x-2 md:space-x-4 ml-2">
       <!-- Login Button -->
-      <button class="group relative overflow-hidden inline-flex items-center justify-center 
-                     w-16 h-8 md:w-20 md:h-10 
-                     rounded-md bg-[#0B0F19] text-gray-200 text-xs md:text-sm font-medium border border-[#232730]">
+      <button class="group relative overflow-hidden inline-flex items-center justify-center w-20 h-10 rounded-md bg-[#0B0F19] text-gray-200 text-sm font-medium border border-[#232730]">
         <span class="relative z-10">Login</span>
         <span class="absolute inset-0 bg-[#232730] -translate-x-full group-hover:translate-x-0 transition-transform duration-700 ease-in-out"></span>
       </button>
 
       <!-- Buy Now Button -->
-      <button class="group relative overflow-hidden inline-flex items-center justify-center 
-                     w-20 h-8 md:w-24 md:h-10 
-                     rounded-md bg-[#E96F44] text-white text-xs md:text-sm font-medium">
+      <button class="group relative overflow-hidden inline-flex items-center justify-center w-24 h-10 rounded-md bg-[#E96F44] text-white text-sm font-medium">
         <span class="relative z-10">Buy now</span>
         <span class="absolute inset-0 bg-[#33AAB2] -translate-x-full group-hover:translate-x-0 transition-transform duration-700 ease-in-out"></span>
       </button>
-
-      <!-- Mobile Hamburger -->
-      <button id="menu-btn" class="md:hidden text-2xl focus:outline-none">&#9776;</button>
     </div>
+
+    <!-- Mobile Hamburger -->
+    <button id="menu-btn" class="md:hidden text-2xl focus:outline-none">&#9776;</button>
   </div>
 
   <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden flex-col space-y-4 px-4 pb-4 bg-[#0B0F19] md:hidden">
-    <a href="#" class="hover:text-gray-300">Modules</a>
-    <a href="#" class="hover:text-gray-300">Pricing</a>
-    <a href="#" class="hover:text-gray-300">Jobs</a>
+  <div id="mobile-menu" class="hidden flex-col space-y-4 px-4 pb-6 bg-[#0B0F19] md:hidden text-center">
+    <!-- Text Links -->
+    <a href="#" class="block text-white">Modules</a>
+    <a href="#" class="block text-white">Pricing</a>
+    <a href="#" class="block text-white">Jobs</a>
+
+    <!-- Buttons -->
+    <button class="w-full py-3 rounded-md bg-[#232730] text-white">Login</button>
+    <button class="w-full py-3 rounded-md bg-[#E96F44] text-white">Buy now</button>
   </div>
 </header>
+
 
 
 
