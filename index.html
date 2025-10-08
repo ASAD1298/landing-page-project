@@ -88,9 +88,18 @@
     </nav>
 
     <!-- Buttons + Hamburger -->
-    <div class="flex items-center space-x-3 md:space-x-4">
-      <button class="px-3 py-1 md:px-4 md:py-2 rounded-md border border-gray-600 hover:border-gray-400 transition text-sm md:text-base">Login</button>
-      <button class="px-3 py-1 md:px-4 md:py-2 rounded-md bg-[#E96F44] hover:bg-[#d85f36] transition text-sm md:text-base">Buy now</button>
+    <div class="flex items-center space-x-3 md:space-x-4 ml-4"> <!-- 👈 Added ml-4 here -->
+      <!-- Login Button -->
+      <button class="group relative overflow-hidden inline-flex items-center justify-center w-20 h-10 rounded-md bg-[#0B0F19] text-gray-200 text-sm font-medium border border-[#232730]">
+        <span class="relative z-10">Login</span>
+        <span class="absolute inset-0 bg-[#232730] -translate-x-full group-hover:translate-x-0 transition-transform duration-700 ease-in-out"></span>
+      </button>
+
+      <!-- Buy Now Button -->
+      <button class="group relative overflow-hidden inline-flex items-center justify-center w-24 h-10 rounded-md bg-[#E96F44] text-white text-sm font-medium">
+        <span class="relative z-10">Buy now</span>
+        <span class="absolute inset-0 bg-[#33AAB2] -translate-x-full group-hover:translate-x-0 transition-transform duration-700 ease-in-out"></span>
+      </button>
 
       <!-- Mobile Hamburger -->
       <button id="menu-btn" class="md:hidden text-2xl focus:outline-none">&#9776;</button>
@@ -104,6 +113,7 @@
     <a href="#" class="hover:text-gray-300">Jobs</a>
   </div>
 </header>
+
   <!-- HERO -->
   <section class="flex flex-col items-center text-center px-6 md:px-10 ">
     <h1 class="text-4xl md:text-5xl mt-24 font-bold leading-tight">
@@ -749,11 +759,11 @@
       playIcon.classList.remove("hidden");
     }
   });
-   // Toggle mobile menu
-  const menuToggle = document.getElementById("menuToggle");
-  const mobileMenu = document.getElementById("mobileMenu");
+  // Mobile menu toggle
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
 
-  menuToggle.addEventListener("click", () => {
+  menuBtn.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden");
   });
 </script>
