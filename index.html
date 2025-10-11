@@ -68,16 +68,16 @@
     }
   </style>
 </head>
-<body class="bg-[#0C0F19] text-white font-sans">
+<body class="bg-[#0C0F19] text-white font-sans pt-20">
 
 <!-- NAV -->
-<header class="bg-[#0B0F19] text-white mt-4">
-  <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 md:py-4">
+<header id="mainHeader" class="fixed top-0 left-0 w-full bg-[#0B0F19] text-white z-50 transition-all duration-500">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-6 md:py-8 transition-all duration-500">
     
     <!-- Logo -->
-    <div class="flex items-center space-x-2">
-      <div class="w-6 h-6 bg-white rounded"></div>
-      <span class="text-lg md:text-xl font-bold">KolderCreative</span>
+    <div class="flex items-center space-x-2 transition-all duration-500">
+      <div class="w-6 h-6 bg-white rounded transition-all duration-500"></div>
+      <span class="text-lg md:text-xl font-bold transition-all duration-500">KolderCreative</span>
     </div>
 
     <!-- Desktop Menu -->
@@ -108,12 +108,10 @@
 
   <!-- Mobile Menu -->
   <div id="mobile-menu" class="hidden flex-col space-y-4 px-4 pb-6 bg-[#0B0F19] md:hidden text-center">
-    <!-- Text Links -->
     <a href="#" class="block text-white">Modules</a>
     <a href="#" class="block text-white">Pricing</a>
     <a href="#" class="block text-white">Jobs</a>
 
-    <!-- Buttons -->
     <button class="w-full py-3 rounded-md bg-[#232730] text-white">Login</button>
     <button class="w-full py-3 rounded-md bg-[#E96F44] text-white">Buy now</button>
   </div>
@@ -810,43 +808,67 @@
 </section>
 
 <!-- STATS SECTION -->
-<section class="bg-[#0B1220] py-12">
+<section class="bg-[#0B1220] py-12 stats-section">
   <div class="max-w-7xl mx-auto px-4 sm:px-6">
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-y-8 gap-x-4 text-center">
+    <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-y-10 gap-x-4 text-center">
 
       <!-- Members -->
-      <div class="flex flex-col items-center">
-        <div class="text-3xl sm:text-4xl font-bold text-white counter break-words" data-target="3500" data-suffix="+">0</div>
-        <p class="text-[#96989D] text-sm sm:text-md uppercase font-medium mt-2">Members</p>
+      <div class="flex flex-col items-center justify-center">
+        <div class="text-4xl font-bold text-white counter" data-target="3500" data-suffix="+">0</div>
+        <p class="text-[#96989D] text-sm uppercase font-medium mt-2">Members</p>
       </div>
 
       <!-- Won in contests -->
-      <div class="flex flex-col items-center">
-        <div class="text-3xl sm:text-4xl font-bold text-white counter break-words" data-target="120000" data-prefix="$" data-suffix="+">0</div>
-        <p class="text-[#96989D] text-sm sm:text-md uppercase font-medium mt-2 leading-tight">Won in contests</p>
+      <div class="flex flex-col items-center justify-center">
+        <div class="text-4xl font-bold text-white counter" data-target="120000" data-prefix="$" data-suffix="+">0</div>
+        <p class="text-[#96989D] text-sm uppercase font-medium mt-2 leading-tight">Won in Contests</p>
       </div>
 
       <!-- Course Material -->
-      <div class="flex flex-col items-center">
-        <div class="text-3xl sm:text-4xl font-bold text-white counter" data-target="33" data-suffix="h">0</div>
-        <p class="text-[#96989D] text-sm sm:text-md uppercase font-medium mt-2">Course Material</p>
+      <div class="flex flex-col items-center justify-center">
+        <div class="text-4xl font-bold text-white counter" data-target="33" data-suffix="h">0</div>
+        <p class="text-[#96989D] text-sm uppercase font-medium mt-2">Course Material</p>
       </div>
 
       <!-- Video Lessons -->
-      <div class="flex flex-col items-center">
-        <div class="text-3xl sm:text-4xl font-bold text-white counter" data-target="190" data-suffix="+">0</div>
-        <p class="text-[#96989D] text-sm sm:text-md uppercase font-medium mt-2">Video Lessons</p>
+      <div class="flex flex-col items-center justify-center">
+        <div class="text-4xl font-bold text-white counter" data-target="190" data-suffix="+">0</div>
+        <p class="text-[#96989D] text-sm uppercase font-medium mt-2">Video Lessons</p>
       </div>
 
       <!-- Jobs & Opportunities -->
-      <div class="flex flex-col items-center">
-        <div class="text-3xl sm:text-4xl font-bold text-white counter" data-target="100" data-suffix="+">0</div>
-        <p class="text-[#96989D] text-sm sm:text-md uppercase font-medium mt-2 text-center leading-tight">Jobs & Opportunities</p>
+      <div class="flex flex-col items-center justify-center">
+        <div class="text-4xl font-bold text-white counter" data-target="100" data-suffix="+">0</div>
+        <p class="text-[#96989D] text-sm uppercase font-medium mt-2 leading-tight text-center">Jobs & Opportunities</p>
       </div>
 
     </div>
   </div>
 </section>
+
+<style>
+  /* Mobile adjustments */
+  @media (max-width: 640px) {
+    .stats-section {
+      padding-top: 2px; /* reduced from 3rem (py-12) to 2rem */
+      padding-bottom: 2.5rem;
+    }
+
+    .grid-cols-1 > div {
+      margin: 0 auto;
+      width: 100%;
+      text-align: center;
+    }
+
+    .counter {
+      font-size: 2rem;
+    }
+
+    .grid {
+      row-gap: 2.2rem;
+    }
+  }
+</style>
 
 
 <!-- PRICING SECTION -->
@@ -1021,7 +1043,7 @@
   </div>
        <!-- Logos section -->
 <div class="mt-24 flex justify-center px-6 sm:px-8 md:px-0">
-  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 text-[#59626C] opacity-40 w-full max-w-6xl">
+  <div class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-8 text-[#59626C] opacity-40 w-full max-w-6xl">
     <img src="https://cdn.prod.website-files.com/640f71a1f77e5e357ebc94d0/64747c9fe6f18aaa6651eee3_Vectors-Wrapper.svg" class="h-6 mx-auto" alt="">
     <img src="https://cdn.prod.website-files.com/640f71a1f77e5e357ebc94d0/64747ca08c98f2cce110c5f2_Vectors-Wrapper.svg" class="h-6 w-32 sm:w-40 mx-auto" alt="">
     <img src="https://cdn.prod.website-files.com/640f71a1f77e5e357ebc94d0/64747ca00fe3143f1c02f388_Vectors-Wrapper.svg" class="h-6 mx-auto" alt="">
@@ -1031,121 +1053,175 @@
   </div>
 </div>
 </section>
-
 <!-- FAQ Section -->
 <section class="w-full text-white py-20 border-t border-[#132D37] relative overflow-hidden">
   <!-- Background Large Text -->
-  <h2 class="text-[190px] font-bold text-center text-[#23262F] opacity-1 absolute left-1/2 -translate-x-1/2 top-20 pointer-events-none select-none" 
+  <h2
+    class="faq-bg text-[190px] font-bold text-center text-[#23262F] opacity-1 absolute left-1/2 -translate-x-1/2 top-20 pointer-events-none select-none"
     style="font-family: Manrope, sans-serif;">
-  FAQ
-</h2>
-  <!-- Full Width Wrapper (no max-width container) -->
-  <div class="w-full relative z-10 space-y-5 px-10 mt-36 ml-52 text-[#D5D7DD] mb-16"
-  style="font-family: Manrope, sans-serif;">
-      
-    <!-- FAQ Item -->
-<div class="faq_item">
-  <button class="faq_question text-left text-[#F4F4F6] text-[22px] font-semibold focus:outline-none">
-    Will there be a section for Final Cut Pro?
-  </button>
-  <div class="faq_answer mt-3 hidden leading-relaxed max-w-3xl text-[#D5D7DD]">
-    This is something we may offer in the future; however, as of now, we’re focused on educating our
-    students in the programs that Sam personally uses. Currently, we offer a wide array of in-depth lessons on
-    DaVinci Resolve, After Effects, and Premiere Pro!
-  </div>
-</div>
+    FAQ
+  </h2>
 
-<!-- FAQ Item -->
-<div class="faq_item">
-  <button class="faq_question text-left text-[#F4F4F6] text-[22px] font-semibold focus:outline-none">
-    Where can I view the courses?
-  </button>
-  <div class="faq_answer mt-3 hidden leading-relaxed max-w-3xl text-[#D5D7DD]">
-    Once you create your account and log in to your customized student dashboard you will have access to the course videos.
-  </div>
-</div>
+  <!-- Full Width Wrapper -->
+  <div
+    class="faq-wrapper w-full relative z-10 space-y-5 px-10 mt-36 ml-52 text-[#D5D7DD] mb-16"
+    style="font-family: Manrope, sans-serif;">
 
-<!-- FAQ Item -->
-<div class="faq_item">
-  <button class="faq_question text-left text-[#F4F4F6] text-[22px] font-semibold focus:outline-none">
-    When do I get access?
-  </button>
-  <div class="faq_answer mt-3 hidden leading-relaxed max-w-3xl text-[#D5D7DD]">
-    The process of getting accepted is instant! Once your payment is processed, you will have access to the course you purchased. 
-    If you purchased KC All Access, you will also receive access to our online community.
-  </div>
-</div>
+    <!-- FAQ Item 1 -->
+    <div class="faq_item">
+      <button class="faq_question text-left text-[#F4F4F6] text-[22px] font-semibold focus:outline-none">
+        Will there be a section for Final Cut Pro?
+      </button>
+      <div class="faq_answer mt-3 hidden leading-relaxed max-w-3xl text-[#D5D7DD]">
+        This is something we may offer in the future; however, as of now, we’re focused on educating our
+        students in the programs that Sam personally uses. Currently, we offer a wide array of in-depth lessons on
+        DaVinci Resolve, After Effects, and Premiere Pro!
+      </div>
+    </div>
 
-<!-- FAQ Item -->
-<div class="faq_item">
-  <button class="faq_question text-left text-[#F4F4F6] text-[22px] font-semibold focus:outline-none">
-    Is the DaVinci Resolve course included in KC All Access?
-  </button>
-  <div class="faq_answer mt-3 hidden leading-relaxed max-w-3xl text-[#D5D7DD]">
-    Yes, all of Sam’s lessons can be found in KC All Access. The complete DaVinci Resolve course is included alongside his lessons in Premiere Pro & After Effects. You will also have lifetime access to these courses as well as all other future lessons created within Kolder Creative! Doesn’t get better than this!
-  </div>
-</div>
+    <!-- FAQ Item 2 -->
+    <div class="faq_item">
+      <button class="faq_question text-left text-[#F4F4F6] text-[22px] font-semibold focus:outline-none">
+        Where can I view the courses?
+      </button>
+      <div class="faq_answer mt-3 hidden leading-relaxed max-w-3xl text-[#D5D7DD]">
+        Once you create your account and log in to your customized student dashboard you will have access to the course videos.
+      </div>
+    </div>
 
-<!-- FAQ Item -->
-<div class="faq_item">
-  <button class="faq_question text-left text-[#F4F4F6] text-[22px] font-semibold focus:outline-none">
-    Do you offer refunds?
-  </button>
-  <div class="faq_answer mt-3 hidden leading-relaxed max-w-3xl text-[#D5D7DD]">
-    No, sorry. We no longer offer refunds as you are able to see exactly what the course & community includes prior to making your payment.
-  </div>
-</div>
+    <!-- FAQ Item 3 -->
+    <div class="faq_item">
+      <button class="faq_question text-left text-[#F4F4F6] text-[22px] font-semibold focus:outline-none">
+        When do I get access?
+      </button>
+      <div class="faq_answer mt-3 hidden leading-relaxed max-w-3xl text-[#D5D7DD]">
+        The process of getting accepted is instant! Once your payment is processed, you will have access to the course you purchased. 
+        If you purchased KC All Access, you will also receive access to our online community.
+      </div>
+    </div>
 
-<!-- FAQ Item -->
-<div class="faq_item">
-  <button class="faq_question text-left text-[#F4F4F6] text-[22px] font-semibold focus:outline-none">
-    Can I download the lessons for offline use?
-  </button>
-  <div class="faq_answer mt-3 hidden leading-relaxed max-w-3xl text-[#D5D7DD]">
-    No, our content is not downloadable, but you will have lifetime access to it as long as you have an internet connection.
-  </div>
-</div>
+    <!-- FAQ Item 4 -->
+    <div class="faq_item">
+      <button class="faq_question text-left text-[#F4F4F6] text-[22px] font-semibold focus:outline-none">
+        Is the DaVinci Resolve course included in KC All Access?
+      </button>
+      <div class="faq_answer mt-3 hidden leading-relaxed max-w-3xl text-[#D5D7DD]">
+        Yes, all of Sam’s lessons can be found in KC All Access. The complete DaVinci Resolve course is included alongside his lessons in Premiere Pro & After Effects. You will also have lifetime access to these courses as well as all other future lessons created within Kolder Creative! Doesn’t get better than this!
+      </div>
+    </div>
+    <!-- FAQ Item 5 -->
+    <div class="faq_item">
+      <button class="faq_question text-left text-[#F4F4F6] text-[22px] font-semibold focus:outline-none">
+        Do you offer refunds?
+      </button>
+      <div class="faq_answer mt-3 hidden leading-relaxed max-w-3xl text-[#D5D7DD]">
+        No, sorry. We no longer offer refunds as you are able to see exactly what the course & community includes prior to making your payment.
+      </div>
+    </div>
 
-<!-- FAQ Item -->
-<div class="faq_item">
-  <button class="faq_question text-left text-[#F4F4F6] text-[22px] font-semibold focus:outline-none">
-    How long do I have access to the course content?
-  </button>
-  <div class="faq_answer mt-3 hidden leading-relaxed max-w-3xl text-[#D5D7DD]">
-    You will have LIFETIME ACCESS to the course you’ve purchased.
-  </div>
-</div>
+    <!-- FAQ Item 6 -->
+    <div class="faq_item">
+      <button class="faq_question text-left text-[#F4F4F6] text-[22px] font-semibold focus:outline-none">
+        Can I download the lessons for offline use?
+      </button>
+      <div class="faq_answer mt-3 hidden leading-relaxed max-w-3xl text-[#D5D7DD]">
+        No, our content is not downloadable, but you will have lifetime access to it as long as you have an internet connection.
+      </div>
+    </div>
 
-<!-- FAQ Item -->
-<div class="faq_item">
-  <button class="faq_question text-left text-[#F4F4F6] text-[22px] font-semibold focus:outline-none">
-    Are your shortcuts compatible with Windows as well?
-  </button>
-  <div class="faq_answer mt-3 hidden leading-relaxed max-w-3xl text-[#D5D7DD]">
-    Yes, we offer our custom shortcuts for both MAC & Windows systems.
-  </div>
-</div>
+    <!-- FAQ Item 7 -->
+    <div class="faq_item">
+      <button class="faq_question text-left text-[#F4F4F6] text-[22px] font-semibold focus:outline-none">
+        How long do I have access to the course content?
+      </button>
+      <div class="faq_answer mt-3 hidden leading-relaxed max-w-3xl text-[#D5D7DD]">
+        You will have LIFETIME ACCESS to the course you’ve purchased.
+      </div>
+    </div>
 
-<!-- FAQ Item -->
-<div class="faq_item">
-  <button class="faq_question text-left text-[#F4F4F6] text-[22px] font-semibold focus:outline-none">
-    Are your courses for beginners or experienced filmmakers?
-  </button>
-  <div class="faq_answer mt-3 hidden leading-relaxed max-w-3xl text-[#D5D7DD]">
-    Our courses are for anyone willing to learn the art of video editing! Whether you're just starting out or you're an advanced filmmaker, both courses are built for all levels, aiming to take your creative abilities to the next level.
-  </div>
-</div>
+    <!-- FAQ Item 8 -->
+    <div class="faq_item">
+      <button class="faq_question text-left text-[#F4F4F6] text-[22px] font-semibold focus:outline-none">
+        Are your shortcuts compatible with Windows as well?
+      </button>
+      <div class="faq_answer mt-3 hidden leading-relaxed max-w-3xl text-[#D5D7DD]">
+        Yes, we offer our custom shortcuts for both MAC & Windows systems.
+      </div>
+    </div>
 
-<!-- FAQ Item -->
-<div class="faq_item">
-  <button class="faq_question text-left text-[#F4F4F6] text-[22px] font-semibold focus:outline-none">
-    Does the course content have subtitles?
-  </button>
-  <div class="faq_answer mt-3 hidden leading-relaxed max-w-3xl text-[#D5D7DD]">
-    We're happy to share that our course now provides subtitles in English, Japanese, Chinese, Portuguese, Arabic, and Russian!
+    <!-- FAQ Item 9 -->
+    <div class="faq_item">
+      <button class="faq_question text-left text-[#F4F4F6] text-[22px] font-semibold focus:outline-none">
+        Are your courses for beginners or experienced filmmakers?
+      </button>
+      <div class="faq_answer mt-3 hidden leading-relaxed max-w-3xl text-[#D5D7DD]">
+        Our courses are for anyone willing to learn the art of video editing! Whether you're just starting out or you're an advanced filmmaker, both courses are built for all levels, aiming to take your creative abilities to the next level.
+      </div>
+    </div>
+
+    <!-- FAQ Item 10 -->
+    <div class="faq_item">
+      <button class="faq_question text-left text-[#F4F4F6] text-[22px] font-semibold focus:outline-none">
+        Does the course content have subtitles?
+      </button>
+      <div class="faq_answer mt-3 hidden leading-relaxed max-w-3xl text-[#D5D7DD]">
+        We're happy to share that our course now provides subtitles in English, Japanese, Chinese, Portuguese, Arabic, and Russian!
+      </div>
+    </div>
   </div>
-</div>
+
+  <!-- Responsive Styles -->
+  <style>
+    /* Tablet screens (<= 1024px) */
+    @media (max-width: 1024px) {
+      .faq-bg {
+        font-size: 150px !important;
+        top: 80px !important;
+        transform: translateX(-50%);
+      }
+
+      .faq-wrapper {
+        margin-left: 0 !important;
+        margin-top: 180px !important;
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+      }
+
+      .faq_question {
+        font-size: 18px !important;
+      }
+    }
+
+    /* Mobile screens (<= 640px) */
+    @media (max-width: 640px) {
+      .faq-bg {
+        font-size: 110px !important;
+        top: 60px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+      }
+
+      .faq-wrapper {
+        margin-left: 0 !important;
+        margin-top: 50px !important; /* moves questions upward */
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+      }
+
+      .faq_question {
+        font-size: 17px !important;
+        line-height: 1.4 !important;
+      }
+
+      .faq_answer {
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+      }
+    }
+  </style>
 </section>
+
+
 
 <!-- Footer -->
 <footer class="bg-[#0B0F19] border-t border-[#242730] text-white py-32">
