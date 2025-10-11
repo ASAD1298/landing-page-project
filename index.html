@@ -68,16 +68,16 @@
     }
   </style>
 </head>
-<body class="bg-[#0C0F19] text-white font-sans pt-20">
+<body class="bg-[#0C0F19] text-white font-sans mt-20">
 
 <!-- NAV -->
-<header id="mainHeader" class="fixed top-0 left-0 w-full bg-[#0B0F19] text-white z-50 transition-all duration-500">
-  <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-6 md:py-8 transition-all duration-500">
+<header id="main-header" class="fixed top-0 left-0 w-full z-50 bg-[#0B0F19] text-white transition-all duration-300">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-4 md:py-5 header-inner transition-all duration-300">
     
     <!-- Logo -->
-    <div class="flex items-center space-x-2 transition-all duration-500">
-      <div class="w-6 h-6 bg-white rounded transition-all duration-500"></div>
-      <span class="text-lg md:text-xl font-bold transition-all duration-500">KolderCreative</span>
+    <div class="flex items-center space-x-2">
+      <div class="w-6 h-6 bg-white rounded"></div>
+      <span class="text-lg md:text-xl font-bold">KolderCreative</span>
     </div>
 
     <!-- Desktop Menu -->
@@ -111,7 +111,6 @@
     <a href="#" class="block text-white">Modules</a>
     <a href="#" class="block text-white">Pricing</a>
     <a href="#" class="block text-white">Jobs</a>
-
     <button class="w-full py-3 rounded-md bg-[#232730] text-white">Login</button>
     <button class="w-full py-3 rounded-md bg-[#E96F44] text-white">Buy now</button>
   </div>
@@ -907,10 +906,10 @@
 
         <!-- ONE-TIME PLAN -->
         <div id="paneOnetime" class="plans_tabs_pane w-tab-pane w--tab-active">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
 
             <!-- Card 1 -->
-            <div class="plan-card rounded-2xl p-6 sm:p-8 bg-[#11202C] flex flex-col justify-between">
+            <div class="plan-card rounded-2xl p-6 sm:p-8 bg-[#11202C] flex flex-col justify-between w-[520px] ml-16">
               <div>
                 <h3 class="text-3xl md:text-4xl font-bold mb-2" style="font-family: Manrope, sans-serif;">DaVinci Resolve</h3>
                 <div class="uppercase text-[#9FA8AE] mb-4 text-sm sm:text-base">One-time payment</div>
@@ -947,7 +946,7 @@
             </div>
 
             <!-- Card 2 -->
-            <div class="plan-card rounded-2xl p-6 sm:p-8 bg-[#11202C] flex flex-col justify-between">
+            <div class="plan-card rounded-2xl p-6 sm:p-8 bg-[#11202C] flex flex-col justify-between w-[520px]">
               <div>
                 <h3 class="text-3xl md:text-4xl font-bold mb-2" style="font-family: Manrope, sans-serif;">All-Access</h3>
                 <div class="uppercase text-[#9FA8AE] mb-4 text-sm sm:text-base">One-time payment</div>
@@ -1226,11 +1225,13 @@
 <!-- Footer -->
 <footer class="bg-[#0B0F19] border-t border-[#242730] text-white py-32">
   <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12">
-    
-    <!-- Left side -->
-<div class="bg-[#171B25] p-16 ml-4 rounded-2xl border border-[#2F333B] w-[482px] h-[445px]">     
-      <img src="https://cdn.prod.website-files.com/605b76d61117d31dd609418a/62cf0b6eb328f24a123e1bd7_kc-logo-light.svg" 
-           alt="Kolder Creative" class="h-6 mb-6">
+
+    <!-- Left side (Form + Info) -->
+    <div class="footer-left order-2 md:order-1 bg-[#171B25] p-10 md:p-16 md:ml-4 rounded-2xl border border-[#2F333B] md:w-[482px] md:h-[445px]">
+      <img
+        src="https://cdn.prod.website-files.com/605b76d61117d31dd609418a/62cf0b6eb328f24a123e1bd7_kc-logo-light.svg"
+        alt="Kolder Creative"
+        class="h-6 mb-6">
 
       <!-- Info -->
       <p class="text-sm text-[#B7B8BA] mt-8">©<span id="year"></span> kold media FZE</p>
@@ -1240,39 +1241,41 @@
 
       <!-- Instagram -->
       <a href="https://www.instagram.com/koldercreative" target="_blank" class="flex items-center gap-2 mt-4">
-        <img src="https://cdn.prod.website-files.com/640f71a1f77e5e357ebc94d0/6410c79bd444fa8a6ef1216f_Instagram_logo_2016.svg" 
-             alt="Instagram" class="h-5 w-5">
+        <img
+          src="https://cdn.prod.website-files.com/640f71a1f77e5e357ebc94d0/6410c79bd444fa8a6ef1216f_Instagram_logo_2016.svg"
+          alt="Instagram" class="h-5 w-5">
         <span class="text-[#B7B8BA] hover:text-white">@koldercreative</span>
       </a>
 
       <!-- Newsletter -->
       <div class="mt-6">
-  <p class="text-md text-[15px] text-[#B7B8BA]">Sign up for news & exclusive offers</p>
-  <form class="flex items-center mt-3">
-    <input type="email" placeholder="Your email" required
-           class="w-full h-12 px-4 bg-[#232730] text-[#B7B8BA] border border-[#44474F] rounded-l-md focus:outline-none">
-    <button class="group relative overflow-hidden inline-flex items-center justify-center w-36 h-12 rounded-r-md bg-[#E96F44] text-white text-sm font-medium">
-      <span class="relative z-10">Submit</span>
-      <span class="absolute inset-0 bg-[#33AAB2] -translate-x-full group-hover:translate-x-0 transition-transform duration-700 ease-in-out"></span>
-    </button>
-  </form>
-<label class="flex items-center gap-2 mt-3 text-xs cursor-pointer">
-  <input type="checkbox" required
-    class="checkbox-custom w-4 h-4 appearance-none border border-[#3a3d44] rounded-sm bg-[#23252a]">
-  
- <span class="text-[#CED0D6] text-[15px]">
-  I agree with 
-  <a href="/privacy-policy" class="text-[#EFEFF1] underline hover:no-underline">privacy policy</a> 
-  and 
-  <a href="/terms-of-service" class="text-[#EFEFF1] underline hover:no-underline">terms</a>.
-</span>
+        <p class="text-md text-[15px] text-[#B7B8BA]">Sign up for news & exclusive offers</p>
+        <form class="flex items-center mt-3">
+          <input type="email" placeholder="Your email" required
+            class="w-full h-12 px-4 bg-[#232730] text-[#B7B8BA] border border-[#44474F] rounded-l-md focus:outline-none">
+          <button
+            class="group relative overflow-hidden inline-flex items-center justify-center w-36 h-12 rounded-r-md bg-[#E96F44] text-white text-sm font-medium">
+            <span class="relative z-10">Submit</span>
+            <span
+              class="absolute inset-0 bg-[#33AAB2] -translate-x-full group-hover:translate-x-0 transition-transform duration-700 ease-in-out"></span>
+          </button>
+        </form>
 
-</label>
+        <label class="flex items-center gap-2 mt-3 text-xs cursor-pointer">
+          <input type="checkbox" required
+            class="checkbox-custom w-4 h-4 appearance-none border border-[#3a3d44] rounded-sm bg-[#23252a]">
+          <span class="text-[#CED0D6] text-[15px]">
+            I agree with
+            <a href="/privacy-policy" class="text-[#EFEFF1] underline hover:no-underline">privacy policy</a>
+            and
+            <a href="/terms-of-service" class="text-[#EFEFF1] underline hover:no-underline">terms</a>.
+          </span>
+        </label>
       </div>
     </div>
 
-    <!-- Right side -->
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-8 text-sm ml-40">
+    <!-- Right side (Links) -->
+    <div class="footer-links order-1 md:order-2 grid grid-cols-2 md:grid-cols-3 gap-10 text-sm md:ml-40 text-left">
       <div>
         <h3 class="uppercase text-[#62656C] text-[14px] tracking-wider mb-6" style="font-family: Manrope, sans-serif;">Course</h3>
         <ul class="space-y-4 text-[#e3e3e3]">
@@ -1294,8 +1297,8 @@
         <ul class="space-y-4 text-[#e3e3e3]">
           <li><a href="#" class="hover:text-[#8A8B90]">Jobs</a></li>
           <li><a href="#" class="hover:text-[#8A8B90]">FAQ</a></li>
-          <li><a href="#" class="hover:text-[#8A8B90]">Privacy policy</a></li>
-          <li><a href="#" class="hover:text-[#8A8B90]">Terms of service</a></li>
+          <li><a href="#" class="hover:text-[#8A8B90]">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-[#8A8B90]">Terms of Service</a></li>
         </ul>
       </div>
     </div>
@@ -1307,19 +1310,9 @@
   </script>
 </footer>
 
-  <!-- Styles -->
-  <style>
-    .plan-card {
-      background: linear-gradient(180deg, #203543, #223F4C);
-      border: 1px solid #374A56;
-      box-shadow: 0 14px 60px -10px #173E48, 0 0 160px 2px #173E48;
-    }
-
-    .plans_tabs_pane { transition: opacity .3s ease, transform .3s ease; }
-    .plans_tabs_pane.hidden { opacity:0; transform:translateY(8px); pointer-events:none; }
-    .plans_tabs_pane.w--tab-active { opacity:1; transform:translateY(0); }
-  </style>
-   <style>
+<!-- Styles -->
+<style>
+  /* Checkbox custom styling */
   .checkbox-custom:checked {
     background-color: #f26d3d;
     border-color: #f26d3d;
@@ -1328,8 +1321,40 @@
     background-position: center;
     background-size: 70%;
   }
+
+  /* ✅ Responsive Footer Layout */
+  @media (max-width: 768px) {
+    footer .max-w-7xl {
+      display: flex;
+      flex-direction: column;
+    }
+
+    footer .footer-links {
+      order: 1;
+      grid-template-columns: 1fr !important;
+      gap: 3rem;
+      margin-left: 0 !important;
+    }
+
+    footer .footer-left {
+      order: 2;
+      margin: 0;
+      width: 100% !important;
+      height: auto !important;
+      margin-top: 3rem;
+    }
+
+    footer h3,
+    footer ul {
+      text-align: left !important;
+    }
+
+    footer ul {
+      margin-left: 0 !important;
+    }
+  }
 </style>
-  
+
 <!-- External JS link -->
   <script src="script.js"></script>
 </body>

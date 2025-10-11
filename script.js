@@ -46,19 +46,24 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // ============================
-// Shrink header on scroll
+// Shrink header on scroll (subtle)
 // ============================
 window.addEventListener("scroll", () => {
   const header = document.getElementById("mainHeader");
-  if (!header) return;
-  if (window.scrollY > 20) {
-    header.classList.add("py-3", "shadow-md");
-    header.classList.remove("py-6");
+  const headerInner = header?.querySelector(".header-inner");
+  if (!header || !headerInner) return;
+
+  if (window.scrollY > 40) {
+    headerInner.classList.remove("py-6", "md:py-6");
+    headerInner.classList.add("py-3", "md:py-4");
+    header.classList.add("shadow-md", "backdrop-blur-md");
   } else {
-    header.classList.add("py-6");
-    header.classList.remove("py-3", "shadow-md");
+    headerInner.classList.add("py-6", "md:py-6");
+    headerInner.classList.remove("py-3", "md:py-4");
+    header.classList.remove("shadow-md", "backdrop-blur-md");
   }
 });
+
 
 // ============================
 // Counter animation (simple)
