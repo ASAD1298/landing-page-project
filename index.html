@@ -812,253 +812,222 @@
 <!-- STATS SECTION -->
 <section class="bg-[#0B1220] py-12">
   <div class="max-w-7xl mx-auto px-4 sm:px-6">
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-center">
-      
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-y-8 gap-x-4 text-center">
+
       <!-- Members -->
-      <div>
-        <div class="text-4xl font-bold text-white counter" data-target="3500" data-suffix="+">0</div>
-        <p class="text-[#96989D] text-md uppercase font-medium mt-2">Members</p>
+      <div class="flex flex-col items-center">
+        <div class="text-3xl sm:text-4xl font-bold text-white counter break-words" data-target="3500" data-suffix="+">0</div>
+        <p class="text-[#96989D] text-sm sm:text-md uppercase font-medium mt-2">Members</p>
       </div>
 
       <!-- Won in contests -->
-      <div>
-        <div class="text-4xl font-bold text-white counter" data-target="120000" data-prefix="$" data-suffix="+">0</div>
-        <p class="text-[#96989D] text-md uppercase font-medium mt-2">Won in contests</p>
+      <div class="flex flex-col items-center">
+        <div class="text-3xl sm:text-4xl font-bold text-white counter break-words" data-target="120000" data-prefix="$" data-suffix="+">0</div>
+        <p class="text-[#96989D] text-sm sm:text-md uppercase font-medium mt-2 leading-tight">Won in contests</p>
       </div>
 
       <!-- Course Material -->
-      <div>
-        <div class="text-4xl font-bold text-white counter" data-target="33" data-suffix="h">0</div>
-        <p class="text-[#96989D] text-md uppercase font-medium mt-2">Course Material</p>
+      <div class="flex flex-col items-center">
+        <div class="text-3xl sm:text-4xl font-bold text-white counter" data-target="33" data-suffix="h">0</div>
+        <p class="text-[#96989D] text-sm sm:text-md uppercase font-medium mt-2">Course Material</p>
       </div>
 
       <!-- Video Lessons -->
-      <div>
-        <div class="text-4xl font-bold text-white counter" data-target="190" data-suffix="+">0</div>
-        <p class="text-[#96989D] text-md uppercase font-medium mt-2">Video Lessons</p>
+      <div class="flex flex-col items-center">
+        <div class="text-3xl sm:text-4xl font-bold text-white counter" data-target="190" data-suffix="+">0</div>
+        <p class="text-[#96989D] text-sm sm:text-md uppercase font-medium mt-2">Video Lessons</p>
       </div>
 
       <!-- Jobs & Opportunities -->
-      <div>
-        <div class="text-4xl font-bold text-white counter" data-target="100" data-suffix="+">0</div>
-        <p class="text-[#96989D] text-md uppercase font-medium mt-2">Jobs & Opportunities</p>
+      <div class="flex flex-col items-center">
+        <div class="text-3xl sm:text-4xl font-bold text-white counter" data-target="100" data-suffix="+">0</div>
+        <p class="text-[#96989D] text-sm sm:text-md uppercase font-medium mt-2 text-center leading-tight">Jobs & Opportunities</p>
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- Pricing Section -->
+
+<!-- PRICING SECTION -->
 <section id="buy" class="section-cta bg-[#0b1720] text-white py-20">
   <div class="padding-global">
-    <div class="container-medium mx-auto px-6">
+    <div class="container-medium mx-auto px-4 sm:px-6">
       <div class="padding-section-medium">
 
-        <div class="w-layout-grid cta_component is-both-plans max-w-5xl mx-auto">
+        <!-- Heading -->
+        <h2 class="text-center text-4xl md:text-6xl font-bold mb-10" style="font-family: Manrope, sans-serif;">
+          Start Your Journey Today
+        </h2>
 
-          <!-- Heading -->
-          <h2 class="heading-style-h1 text-align-center text-6xl font-bold text-center mb-10" style="font-family: Manrope, sans-serif;">
-            Start Your Journey Today
-          </h2>
-
-          <!-- Trusted -->
-          <div class="trust_component is-two-plans flex items-center justify-center gap-3 mb-8">
-            <div class="trust_text text-[#757E8B] text-[14px]" style="font-family: Manrope, sans-serif;">Trusted by 4,000+ filmmakers</div>
+        <!-- Trusted -->
+        <div class="flex items-center justify-center gap-3 mb-8">
+          <div class="text-[#757E8B] text-[14px]" style="font-family: Manrope, sans-serif;">
+            Trusted by 4,000+ filmmakers
           </div>
-
-          <!-- Tabs -->
-          <div id="plansTabs" class="plans_tabs_component w-full flex justify-center mb-6">
-            <div class="plans_tabs_menu inline-flex rounded-lg overflow-hidden shadow-sm">
-              <button id="tabOneTime"
-                      aria-selected="true"
-                      class="tab-btn px-16 py-2 text-md font-sm rounded-l-md transition-colors duration-300 bg-[#FCF1ED] text-black">
-                One-time
-              </button>
-              <button id="tabInstallments"
-                      aria-selected="false"
-                      class="tab-btn px-16 py-2 text-md font-sm rounded-r-md transition-colors duration-300 bg-[#152E3D] text-[#EFEFF2]">
-                Installments
-              </button>
-            </div>
-          </div>
-
-          <!-- Tab panes -->
-          <div class="plans_tabs_content">
-
-            <!-- ONE-TIME PANE -->
-            <div id="paneOnetime" class="plans_tabs_pane w-tab-pane w--tab-active">
-              <div class="plans-wrapper grid md:grid-cols-2 gap-8">
-
-                <!-- Card 1 -->
-                <div class="plan-card rounded-2xl p-8 relative flex flex-col justify-between">
-                  <div>
-                    <h3 class="text-4xl font-bold mb-2 text-[40px]" style="font-family: Manrope, sans-serif;">DaVinci Resolve</h3>
-                    <div class="uppercase text-md text-[#9FA8AE] mb-4 text-[16px]" style="font-family: Manrope, sans-serif;">One-time payment</div>
-
-                    <div class="mb-4 flex items-baseline space-x-2">
-                      <div class="text-3xl md:text-3xl font-medium">$797</div>
-                      <div class="text-md text-[#9FA8AE] text-[16px]" style="font-family: Manrope, sans-serif;">for lifetime</div>
-                    </div>
-
-                    <p class="text-[#D5D7DD] text-[17px] mb-6" style="font-family: Inter,sans-serif;">
-                      Learn Sam's entire DaVinci editing workflow from start to finish. Solo Module. Community access not included.
-                    </p>
-                    <ul role="list" 
-                        class="space-y-2 ml-6 text-[#BFC3CA] text-[15px] font-medium
-                               list-image-[url('https://cdn.prod.website-files.com/640f71a1f77e5e357ebc94d0/6421f2fb3351ce38c678a8d6_check-icon-3.svg')]">
-                      <li class="pl-2">19+ hours, 15 modules, 90 videos</li>
-                      <li class="pl-2">Beginner Friendly – No prior experience necessary</li>
-                      <li class="pl-2">Downloads to original media so you can follow along</li>
-                      <li class="pl-2">Keyboard shortcut PDF cheatsheets</li>
-                      <li class="pl-2">Access to all future DaVinci lessons</li>
-                      <li class="pl-2">Solo Module – No Community Access</li>
-                    </ul>
-                  </div>
-
-                   <div class="mt-10 flex justify-center">
-  <button
-    class="group relative overflow-hidden w-[500px] py-4 rounded-md bg-[#E96F44] text-white text-lg font-medium transition-all duration-700">
-    
-    <!-- Text (centered) -->
-    <span class="relative z-10 block text-center">Continue</span>
-
-    <!-- Arrow Icon (absolute right) -->
-    <img src="https://cdn.prod.website-files.com/640f71a1f77e5e357ebc94d0/6459367b33dfec62f11598f4_arrow-right.svg" 
-         alt="arrow" 
-         class="absolute right-6 top-1/2 -translate-y-1/2 z-10 w-4 h-4" />
-
-    <!-- Wave background -->
-    <span
-      class="absolute inset-0 bg-[#33AAB2] -translate-x-full group-hover:translate-x-0 transition-transform duration-700 ease-in-out z-0">
-    </span>
-  </button>
-</div>
-</div>
-
-                <!-- Card 2 -->
-                <div class="plan-card rounded-2xl p-8 relative flex flex-col justify-between">
-                  <div>
-                    <h3 class="text-4xl font-bold mb-2 text-[40px]" style="font-family: Manrope, sans-serif;">All-Access</h3>
-                    <div class="uppercase text-md text-[#9FA8AE] mb-4 text-[16px]" style="font-family: Manrope, sans-serif;">One-time payment</div>
-
-                    <div class="mb-4 flex items-baseline space-x-2">
-                      <div class="text-3xl md:text-3xl font-medium">$1497</div>
-                      <div class="text-md text-[#9FA8AE] text-[16px]" style="font-family: Manrope, sans-serif;">for lifetime</div>
-                    </div>
-
-                    <p class="text-[#D5D7DD] text-[17px] mb-6" style="font-family: Inter,sans-serif;">
-                      The All-In-One Filmmaking Course with over 190+ video lessons covering DaVinci Resolve, Premiere Pro, & After Effects. Plus business insights that will help you kick start your filmmaking career.
-                    </p>
-                    <ul role="list" 
-                        class="space-y-2 ml-6 text-[#BFC3CA] text-[15px] font-medium
-                               list-image-[url('https://cdn.prod.website-files.com/640f71a1f77e5e357ebc94d0/6421f2fb3351ce38c678a8d6_check-icon-3.svg')]">
-                      <li class="pl-2">Over +190 lessons (33 hours) of course content</li>
-                      <li class="pl-2">DaVinci Resolve, Premiere Pro, & After Effects & more</li>
-                      <li class="pl-2">Beginner friendly - no prior experience necessary</li>
-                      <li class="pl-2">Downloads to original media to follow along</li>
-                      <li class="pl-2">Keyboard shortcuts & PDF cheat sheets</li>
-                      <li class="pl-2">Lessons on business fundamentals</li>
-                      <li class="pl-2">Downloadable templates & pitch decks</li>
-                      <li class="pl-2">Business Insights from Sam's personal manager</li>
-                      <li class="pl-2">Access to exclusive Job Board tools & opportunities</li>
-                      <li class="pl-2">Access to Member Directory tools</li>
-                      <li class="pl-2">Community access (private FB group & Discord)</li>
-                      <li class="pl-2">Exclusive discounts & merch</li>
-                    </ul>
-                  </div>
-
-  <div class="mt-10 flex justify-center">
-  <button
-    class="group relative overflow-hidden w-[500px] py-4 rounded-md bg-[#E96F44] text-white text-lg font-medium transition-all duration-700">
-    
-    <!-- Text (centered) -->
-    <span class="relative z-10 block text-center">Continue</span>
-
-    <!-- Arrow Icon (absolute right) -->
-    <img src="https://cdn.prod.website-files.com/640f71a1f77e5e357ebc94d0/6459367b33dfec62f11598f4_arrow-right.svg" 
-         alt="arrow" 
-         class="absolute right-6 top-1/2 -translate-y-1/2 z-10 w-4 h-4" />
-
-    <!-- Wave background -->
-    <span
-      class="absolute inset-0 bg-[#33AAB2] -translate-x-full group-hover:translate-x-0 transition-transform duration-700 ease-in-out z-0">
-    </span>
-  </button>
-</div>
-
-            </div>
-               </div>
-        </div>
-         </div> <!-- ✅ closed One-time wrapper -->
-
-            <!-- INSTALLMENTS PANE -->
-            <div id="paneInstallments" class="plans_tabs_pane hidden">
-  <div class="flex justify-center">
-    <div class="plan-card rounded-2xl p-8 relative flex flex-col justify-between w-full max-w-[520px]">
-      <div>
-        <h3 class="text-4xl font-bold mb-2 text-[40px]" style="font-family: Manrope, sans-serif;">All-Access</h3>
-        <div class="uppercase text-md text-[#9FA8AE] mb-4 text-[16px]" style="font-family: Manrope, sans-serif;">3 Monthly Installments</div>
-
-        <div class="mb-4 flex items-baseline space-x-2">
-          <div class="text-3xl md:text-3xl font-medium">3×$499</div>
-          <div class="text-md text-[#9FA8AE] text-[16px]" style="font-family: Manrope, sans-serif;">for lifetime</div>
         </div>
 
-        <p class="text-[#D5D7DD] text-[17px] mb-6" style="font-family: Inter,sans-serif;">
-          The All-In-One Filmmaking Course with over 190+ video lessons covering DaVinci Resolve, Premiere Pro, & After Effects. Plus business insights that will help you kick start your filmmaking career.
-        </p>
-        <ul role="list" 
-            class="space-y-2 ml-6 text-[#BFC3CA] text-[15px] font-medium
-                   list-image-[url('https://cdn.prod.website-files.com/640f71a1f77e5e357ebc94d0/6421f2fb3351ce38c678a8d6_check-icon-3.svg')]">
-          <li class="pl-2">Over +190 lessons (33 hours) of course content</li>
-          <li class="pl-2">DaVinci Resolve, Premiere Pro, & After Effects & more</li>
-          <li class="pl-2">Beginner friendly - no prior experience necessary</li>
-          <li class="pl-2">Downloads to original media to follow along</li>
-          <li class="pl-2">Keyboard shortcuts & PDF cheat sheets</li>
-          <li class="pl-2">Lessons on business fundamentals</li>
-          <li class="pl-2">Downloadable templates & pitch decks</li>
-          <li class="pl-2">Business Insights from Sam's personal manager</li>
-          <li class="pl-2">Access to exclusive Job Board tools & opportunities</li>
-          <li class="pl-2">Access to Member Directory tools</li>
-          <li class="pl-2">Community access (private FB group & Discord)</li>
-          <li class="pl-2">Exclusive discounts & merch</li>
-        </ul>
-      </div>
+        <!-- Tabs -->
+        <div id="plansTabs" class="flex justify-center mb-6">
+          <div class="flex w-full max-w-[400px] sm:max-w-[420px] md:max-w-[480px] rounded-lg overflow-hidden shadow-sm">
+            <button id="tabOneTime"
+              class="tab-btn flex-1 py-2 text-sm sm:text-base font-medium bg-[#FCF1ED] text-black transition-colors duration-300 rounded-l-md"
+              aria-selected="true">
+              One-time
+            </button>
+            <button id="tabInstallments"
+              class="tab-btn flex-1 py-2 text-sm sm:text-base font-medium bg-[#152E3D] text-[#EFEFF2] transition-colors duration-300 rounded-r-md"
+              aria-selected="false">
+              Installments
+            </button>
+          </div>
+        </div>
 
-      <div class="mt-10 flex justify-center">
-  <button
-    class="group relative overflow-hidden w-[500px] py-4 rounded-md bg-[#E96F44] text-white text-lg font-medium transition-all duration-700">
-    
-    <!-- Text (centered) -->
-    <span class="relative z-10 block text-center">Continue</span>
+        <!-- ONE-TIME PLAN -->
+        <div id="paneOnetime" class="plans_tabs_pane w-tab-pane w--tab-active">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-    <!-- Arrow Icon (absolute right) -->
-    <img src="https://cdn.prod.website-files.com/640f71a1f77e5e357ebc94d0/6459367b33dfec62f11598f4_arrow-right.svg" 
-         alt="arrow" 
-         class="absolute right-6 top-1/2 -translate-y-1/2 z-10 w-4 h-4" />
+            <!-- Card 1 -->
+            <div class="plan-card rounded-2xl p-6 sm:p-8 bg-[#11202C] flex flex-col justify-between">
+              <div>
+                <h3 class="text-3xl md:text-4xl font-bold mb-2" style="font-family: Manrope, sans-serif;">DaVinci Resolve</h3>
+                <div class="uppercase text-[#9FA8AE] mb-4 text-sm sm:text-base">One-time payment</div>
 
-    <!-- Wave background -->
-    <span
-      class="absolute inset-0 bg-[#33AAB2] -translate-x-full group-hover:translate-x-0 transition-transform duration-700 ease-in-out z-0">
-    </span>
-  </button>
-</div>
+                <div class="mb-4 flex items-baseline space-x-2">
+                  <div class="text-3xl font-medium">$797</div>
+                  <div class="text-sm text-[#9FA8AE]">for lifetime</div>
+                </div>
+
+                <p class="text-[#D5D7DD] text-[15px] sm:text-[17px] mb-6" style="font-family: Inter,sans-serif;">
+                  Learn Sam's entire DaVinci editing workflow from start to finish. Solo Module. Community access not included.
+                </p>
+
+                <ul class="space-y-2 ml-6 text-[#BFC3CA] text-[14px] sm:text-[15px] font-medium list-image-[url('https://cdn.prod.website-files.com/640f71a1f77e5e357ebc94d0/6421f2fb3351ce38c678a8d6_check-icon-3.svg')]">
+                  <li>19+ hours, 15 modules, 90 videos</li>
+                  <li>Beginner Friendly – No prior experience necessary</li>
+                  <li>Downloads to original media so you can follow along</li>
+                  <li>Keyboard shortcut PDF cheatsheets</li>
+                  <li>Access to all future DaVinci lessons</li>
+                  <li>Solo Module – No Community Access</li>
+                </ul>
+              </div>
+
+              <div class="mt-10 flex justify-center">
+                <button
+                  class="group relative overflow-hidden w-full sm:w-[500px] py-4 rounded-md bg-[#E96F44] text-white text-lg font-medium transition-all duration-700">
+                  <span class="relative z-10 block text-center">Continue</span>
+                  <img src="https://cdn.prod.website-files.com/640f71a1f77e5e357ebc94d0/6459367b33dfec62f11598f4_arrow-right.svg"
+                    alt="arrow" class="absolute right-6 top-1/2 -translate-y-1/2 z-10 w-4 h-4" />
+                  <span
+                    class="absolute inset-0 bg-[#33AAB2] -translate-x-full group-hover:translate-x-0 transition-transform duration-700 ease-in-out z-0"></span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="plan-card rounded-2xl p-6 sm:p-8 bg-[#11202C] flex flex-col justify-between">
+              <div>
+                <h3 class="text-3xl md:text-4xl font-bold mb-2" style="font-family: Manrope, sans-serif;">All-Access</h3>
+                <div class="uppercase text-[#9FA8AE] mb-4 text-sm sm:text-base">One-time payment</div>
+
+                <div class="mb-4 flex items-baseline space-x-2">
+                  <div class="text-3xl font-medium">$1497</div>
+                  <div class="text-sm text-[#9FA8AE]">for lifetime</div>
+                </div>
+
+                <p class="text-[#D5D7DD] text-[15px] sm:text-[17px] mb-6" style="font-family: Inter,sans-serif;">
+                  The All-In-One Filmmaking Course with over 190+ video lessons covering DaVinci Resolve, Premiere Pro, & After Effects. Plus business insights that will help you kick start your filmmaking career.
+                </p>
+
+                <ul class="space-y-2 ml-6 text-[#BFC3CA] text-[14px] sm:text-[15px] font-medium list-image-[url('https://cdn.prod.website-files.com/640f71a1f77e5e357ebc94d0/6421f2fb3351ce38c678a8d6_check-icon-3.svg')]">
+                  <li>Over +190 lessons (33 hours) of course content</li>
+                  <li>DaVinci Resolve, Premiere Pro, & After Effects & more</li>
+                  <li>Beginner friendly - no prior experience necessary</li>
+                  <li>Downloads to original media to follow along</li>
+                  <li>Keyboard shortcuts & PDF cheat sheets</li>
+                  <li>Lessons on business fundamentals</li>
+                  <li>Downloadable templates & pitch decks</li>
+                  <li>Business Insights from Sam's personal manager</li>
+                  <li>Access to exclusive Job Board tools & opportunities</li>
+                  <li>Access to Member Directory tools</li>
+                  <li>Community access (private FB group & Discord)</li>
+                  <li>Exclusive discounts & merch</li>
+                </ul>
+              </div>
+
+              <div class="mt-10 flex justify-center">
+                <button
+                  class="group relative overflow-hidden w-full sm:w-[500px] py-4 rounded-md bg-[#E96F44] text-white text-lg font-medium transition-all duration-700">
+                  <span class="relative z-10 block text-center">Continue</span>
+                  <img src="https://cdn.prod.website-files.com/640f71a1f77e5e357ebc94d0/6459367b33dfec62f11598f4_arrow-right.svg"
+                    alt="arrow" class="absolute right-6 top-1/2 -translate-y-1/2 z-10 w-4 h-4" />
+                  <span
+                    class="absolute inset-0 bg-[#33AAB2] -translate-x-full group-hover:translate-x-0 transition-transform duration-700 ease-in-out z-0"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- INSTALLMENTS PLAN -->
+        <div id="paneInstallments" class="plans_tabs_pane hidden">
+          <div class="flex justify-center">
+            <div class="plan-card rounded-2xl p-6 sm:p-8 bg-[#11202C] w-full max-w-[520px]">
+              <div>
+                <h3 class="text-3xl md:text-4xl font-bold mb-2" style="font-family: Manrope, sans-serif;">All-Access</h3>
+                <div class="uppercase text-[#9FA8AE] mb-4 text-sm sm:text-base">3 Monthly Installments</div>
+
+                <div class="mb-4 flex items-baseline space-x-2">
+                  <div class="text-3xl font-medium">3×$499</div>
+                  <div class="text-sm text-[#9FA8AE]">for lifetime</div>
+                </div>
+
+                <p class="text-[#D5D7DD] text-[15px] sm:text-[17px] mb-6" style="font-family: Inter,sans-serif;">
+                  The All-In-One Filmmaking Course with over 190+ video lessons covering DaVinci Resolve, Premiere Pro, & After Effects. Plus business insights that will help you kick start your filmmaking career.
+                </p>
+
+                <ul class="space-y-2 ml-6 text-[#BFC3CA] text-[14px] sm:text-[15px] font-medium list-image-[url('https://cdn.prod.website-files.com/640f71a1f77e5e357ebc94d0/6421f2fb3351ce38c678a8d6_check-icon-3.svg')]">
+                  <li>Over +190 lessons (33 hours) of course content</li>
+                  <li>DaVinci Resolve, Premiere Pro, & After Effects & more</li>
+                  <li>Beginner friendly - no prior experience necessary</li>
+                  <li>Downloads to original media to follow along</li>
+                  <li>Keyboard shortcuts & PDF cheat sheets</li>
+                  <li>Lessons on business fundamentals</li>
+                  <li>Downloadable templates & pitch decks</li>
+                  <li>Business Insights from Sam's personal manager</li>
+                  <li>Access to exclusive Job Board tools & opportunities</li>
+                  <li>Access to Member Directory tools</li>
+                  <li>Community access (private FB group & Discord)</li>
+                  <li>Exclusive discounts & merch</li>
+                </ul>
+              </div>
+
+              <div class="mt-10 flex justify-center">
+                <button
+                  class="group relative overflow-hidden w-full sm:w-[500px] py-4 rounded-md bg-[#E96F44] text-white text-lg font-medium transition-all duration-700">
+                  <span class="relative z-10 block text-center">Continue</span>
+                  <img src="https://cdn.prod.website-files.com/640f71a1f77e5e357ebc94d0/6459367b33dfec62f11598f4_arrow-right.svg"
+                    alt="arrow" class="absolute right-6 top-1/2 -translate-y-1/2 z-10 w-4 h-4" />
+                  <span
+                    class="absolute inset-0 bg-[#33AAB2] -translate-x-full group-hover:translate-x-0 transition-transform duration-700 ease-in-out z-0"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
-</div>
-
-          <!-- Logos section -->
-<div class="mt-24 flex justify-center">
-  <div class="grid grid-cols-3 md:grid-cols-3 gap-8 text-[#59626C] opacity-40 ">
-    <!-- Row 1 -->
-    <img src="https://cdn.prod.website-files.com/640f71a1f77e5e357ebc94d0/64747c9fe6f18aaa6651eee3_Vectors-Wrapper.svg" class="h-6 w-20 mx-auto" alt="">
-    <img src="https://cdn.prod.website-files.com/640f71a1f77e5e357ebc94d0/64747ca08c98f2cce110c5f2_Vectors-Wrapper.svg" class="h-6 w-40 mx-auto" alt="">
+       <!-- Logos section -->
+<div class="mt-24 flex justify-center px-6 sm:px-8 md:px-0">
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 text-[#59626C] opacity-40 w-full max-w-6xl">
+    <img src="https://cdn.prod.website-files.com/640f71a1f77e5e357ebc94d0/64747c9fe6f18aaa6651eee3_Vectors-Wrapper.svg" class="h-6 mx-auto" alt="">
+    <img src="https://cdn.prod.website-files.com/640f71a1f77e5e357ebc94d0/64747ca08c98f2cce110c5f2_Vectors-Wrapper.svg" class="h-6 w-32 sm:w-40 mx-auto" alt="">
     <img src="https://cdn.prod.website-files.com/640f71a1f77e5e357ebc94d0/64747ca00fe3143f1c02f388_Vectors-Wrapper.svg" class="h-6 mx-auto" alt="">
     <img src="https://cdn.prod.website-files.com/640f71a1f77e5e357ebc94d0/64747ca17cadc908f5ffff9a_Vectors-Wrapper.svg" class="h-6 mx-auto" alt="">
     <img src="https://cdn.prod.website-files.com/640f71a1f77e5e357ebc94d0/64747ca2edfc1531f4671ad5_Vectors-Wrapper.svg" class="h-6 mx-auto" alt="">
     <img src="https://cdn.prod.website-files.com/640f71a1f77e5e357ebc94d0/64747ca20fe3143f1c02f42f_Vectors-Wrapper.svg" class="h-8 mx-auto" alt="">
-
   </div>
 </div>
 </section>
